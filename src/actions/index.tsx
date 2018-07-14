@@ -10,13 +10,13 @@ export interface IDecrementEnthusiasm {
 
 export type EnthusiasmAction = IIncrementEnthusiasm | IDecrementEnthusiasm;
 
-export function incrementEnthusiasm(): IIncrementEnthusiasm {
+export const incrementEnthusiasm = (): IIncrementEnthusiasm => {
   return {
     type: constants.INCREMENT_ENTHUSIASM
   }
 }
 
-export function decrementEnthusiasm(): IDecrementEnthusiasm {
+export const decrementEnthusiasm = (): IDecrementEnthusiasm => {
   return {
     type: constants.DECREMENT_ENTHUSIASM
   }
